@@ -1,0 +1,93 @@
+body {
+	/* Оттенок (синий), насыщенность, светлота, НЕпрозрачность */
+	background-color: hsla(210, 0%, 10%, 0.99);
+
+	color: #000;
+
+	/* Запрет на выделение текста,
+		 чтобы нельзя было выделять символы на кнопках */
+	user-select: none;
+
+	font-family: tahoma, sans-serif;
+
+	padding: 10px;;
+
+}
+
+header {
+	color: white;
+	letter-spacing: 5px;
+}
+
+#max {
+	color: dodgerblue;
+}
+#maska {
+	color: deeppink;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 4px;
+	background-color: hsl(210, 0%, 25%);
+	padding: 4px;
+	border-radius: 5px;
+	max-width: 360px;
+}
+
+.item {
+	background-color: hsl(210, 0%, 70%);
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 22px;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+form {
+	max-width: 100%;
+}
+
+input {
+	width: 100%;
+	height: 60px;
+	border: none;
+	font-size: 30px;
+	outline: none;
+	text-align: right;
+	padding: 0;
+}
+
+.input {
+	grid-column: 1/-1;
+	padding: 0;
+}
+
+.clean {
+	grid-column: 1/3;
+	background-color: hsl(0, 80%, 45%);
+	color: white;
+}
+
+.back {
+	grid-column: 3/-1;
+	background-color: hsl(210, 80%, 45%);
+	color: white;
+		font-size: 36px;
+}
+
+.equal {
+	grid-column: 4;
+	grid-row: 6/8;
+	background-color: hsl(120, 80%, 25%);
+	color: white;
+	font-size: 36px;
+}
+
+.zero {
+	grid-column: 1/3;
+}
